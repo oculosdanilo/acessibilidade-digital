@@ -8,14 +8,14 @@ const buscar = document.getElementById("buscar");
 var fonteSession = sessionStorage.getItem("fonte");
 if (fonteSession != "") {
   switch (fonteSession) {
-    case "normal":
-      selecionarFonte("normal", btnFonte1);
+    case "enorme":
+      selecionarFonte("enorme", btnFonte3);
       break;
     case "grande":
       selecionarFonte("grande", btnFonte2);
       break;
     default:
-      selecionarFonte("enorme", btnFonte3);
+      selecionarFonte("normal", btnFonte1);
       break;
   }
 }
