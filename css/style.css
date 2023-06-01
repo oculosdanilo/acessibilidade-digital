@@ -1,0 +1,279 @@
+:root {
+  --fonteHeading: 110%;
+  /* normal: 110%; grande: 130%; enorme: 150%  */
+  --fonteParagrafo: 100%;
+  /* normal: 100%; grande: 120%; enorme: 140% */
+  --fundo: white;
+  /* alto contraste: black */
+  --txtColor: black;
+  /* alto contraste: white */
+  --txtColorHover: red;
+  /* alto contraste: white */
+  --sombra: rgb(201, 201, 201);
+  /* alto contraste: transparent */
+  --kmColor: rgb(130, 0, 0);
+  /* alto contraste: black */
+  --bordaContraste: transparent;
+  /* alto contraste: white */
+  --inputHover: rgb(224, 224, 224);
+  /* alto contraste: transparent */
+  --inputBorda: rgb(245, 83, 83);
+  /* alto contraste: white */
+  --txtSecundario: red;
+  /* alto contraste: yellow */
+  --titulo: 200%;
+  /* normal: 200%; grande: 250%; enorme: 300% */
+  --subtitulo: 120%;
+  /* normal: 120%; grande: 150%; enorme: 200% */
+}
+
+* {
+  font-family: "Prompt", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: var(--fundo);
+}
+
+.header {
+  background-color: var(--fundo);
+  color: var(--txtColor);
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: 98;
+  position: relative;
+  border-bottom: 3px solid var(--bordaContraste);
+  box-shadow: 0px 2px 20px var(--sombra);
+}
+
+.link {
+  font-size: var(--fonteHeading);
+  margin: 2%;
+  transition-duration: 0.8s;
+  text-decoration: none;
+  color: var(--txtColor);
+}
+
+.link:hover {
+  color: var(--txtColorHover);
+  text-decoration: underline;
+  scale: 1.3;
+}
+
+.logo {
+  width: 30%;
+  height: 70%;
+  margin-left: 25%;
+  transform: scale(0.8);
+}
+
+.txtBusca {
+  width: 25%;
+  border: none;
+  height: 25%;
+  font-size: var(--fonteParagrafo);
+  border-bottom: 3px solid var(--inputBorda);
+  background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+  /* alto contraste: url("./img/lupa.png") no-repeat right */
+  background-size: 20px;
+  padding-left: 2em;
+  color: var(--txtColor);
+}
+
+.txtBusca:hover {
+  cursor: pointer;
+  background-color: var(--inputHover);
+}
+
+.header input:focus {
+  outline: none !important;
+  border: none;
+  box-shadow: 0px 2px 20px var(--sombra);
+  border-bottom: 3px solid var(--inputBorda);
+}
+
+.content {
+  width: 100vw;
+  height: 70vh;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guard {
+  background-color: var(--fundo);
+  box-shadow: 0px 2px 20px var(--sombra);
+  width: 50em;
+  height: 30em;
+  border-radius: 25px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--bordaContraste);
+}
+
+.olho-vivo {
+  width: 54%;
+  height: 100%;
+  border-radius: 25px 0px 0px 25px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sep {
+  background-color: var(--txtColor);
+  width: 0.1%;
+  height: 85%;
+}
+
+.info {
+  width: 54%;
+  height: 100%;
+  border-radius: 0px 25px 25px 0px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part {
+  color: var(--txtColor);
+  width: 45%;
+  height: 30%;
+  margin: 0.3em;
+  text-align: center;
+}
+
+.part p {
+  font-weight: bolder;
+  font-size: var(--fonteParagrafo);
+}
+
+.km {
+  color: white;
+  font-weight: bold;
+  background-color: var(--kmColor);
+  border-radius: 10px;
+  width: 100%;
+  height: 2em;
+  text-align: center;
+  padding-top: 5%;
+  font-size: var(--fonteParagrafo);
+  border: 3px solid var(--bordaContraste);
+}
+
+.footer {
+  background-color: var(--fundo);
+  color: var(--txtColor);
+  width: 100vw;
+  height: 14vh;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Nova Página */
+.form {
+  margin: 5%;
+  width: 90%;
+  height: 100%;
+}
+
+.in {
+  font-size: 1.2em;
+  color: var(--txtSecundario);
+  font-weight: bold;
+  font-size: var(--fonteParagrafo);
+}
+
+.space {
+  width: 98%;
+  height: 2.5em;
+  border: 0px;
+  border-bottom: 2px solid var(--txtSecundario);
+  color: var(--txtColor);
+  background-color: var(--fundo);
+  font-weight: bolder;
+  font-size: 1em;
+  padding-left: 1em;
+}
+
+.space:focus {
+  outline: none !important;
+  border: none;
+  box-shadow: 0px 2px 20px rgb(201, 201, 201);
+  border-bottom: 3px solid var(--txtSecundario);
+}
+
+.botao {
+  margin-top: 1.5em;
+  width: 40%;
+  margin-left: 30%;
+  border: 1px solid var(--txtSecundario);
+  color: var(--txtSecundario);
+  font-weight: bolder;
+  font-size: 1.2em;
+  background-color: transparent;
+  transition-duration: 1s;
+}
+
+.botao:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+/* menu de acessibilidade */
+.acessibilidade {
+  background-color: rgb(99, 98, 98);
+  width: 100%;
+  height: 5%;
+  z-index: 99;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.btnsFonte {
+  display: flex;
+  align-items: center;
+  margin-left: 5em;
+}
+
+.btnsFonte button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 5vh;
+  width: 3.5vh;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contrasteSwitcher {
+  margin-left: auto;
+  margin-right: 5em;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}

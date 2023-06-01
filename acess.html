@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="author" content="Grupo: Danilo Lima, Guilherme Barbosa, Juliana Leal, Felipe Araújo e Camila Vitória">
+  <meta meta="keywords" content="acessibilidade digital">
+  <link rel="stylesheet" type="text/css" href="css/onibus.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Linhas de Ônibus</title>
+</head>
+
+<body class="body">
+  <div class="acessibilidade">
+    <div class="btnsFonte">
+      <button id="btnFonte1" style="font-size: small; background-color: white; color: black;" value="normal"
+        aria-label="Tamanho da fonte: normal" onclick="selecionarFonte(this.value, this)">A</button> |
+      <button id="btnFonte2" style="font-size: large;" value="grande" aria-label="Tamanho da fonte: grande"
+        onclick="selecionarFonte(this.value, this)">A</button> |
+      <button id="btnFonte3" style="font-size: x-large;" value="enorme" aria-label="Tamanho da fonte: enorme"
+        onclick="selecionarFonte(this.value, this)">A</button>
+    </div>
+    <button class="contrasteSwitcher" onclick="switchContrasteOnibus()" aria-label="Contraste">
+      <span class="material-icons">
+        contrast
+      </span>
+    </button>
+  </div>
+  <div class="header">
+    <a class="link" href="contato.html"> CONTATO </a> |
+    <a class="link" href="about.html"> SOBRE NÓS </a> |
+    <a class="link" href="onibus.html"> ÔNIBUS </a>|
+    <a class="link" href="acess.html"> ACESSIBILIDADE </a>
+    <a href="index.html">
+      <img id="imgLogo" src="img/sptrans.png" class="logo" alt="Logotipo oficial da SPTrans" /><br />
+    </a>
+    <input id="buscar" type="text" class="txtBusca" placeholder="Buscar..." />
+  </div>
+  <div class="informacoes">
+    <h1 style="margin-left: 33%; margin-bottom: 5%">
+      Acessibilidade na <span style="color: var(--txtSecundario)">SPTrans</span>
+    </h1>
+    <div class="container1">
+      <h2>
+        A LEI BRASILEIRA DE INCLUSÃO <br />DA PESSOA COM DEFICIÊNCIA
+        ASSEGURA<br />
+        EM SEU ART. 46
+      </h2>
+      <p id="paragrafo">
+        O direito ao transporte e à mobilidade da pessoa com deficiência ou
+        com mobilidade reduzida em igualdade de oportunidades com as demais
+        pessoas, por meio da eliminação de todos os obstáculos.
+      </p>
+      <img src="img/lei.jpg" class="ilustracao"
+        alt="Uma pessoa cadeirante subindo no ônibus, mostrando a eficácia da lei." />
+    </div>
+    <div class="container2">
+      <img src="img/acess.jpg" class="ilustracao2"
+        alt="Uma mulher, senhora de idade, desfrutando de seus direitos constituicionais e muito contentes com nossa empresa." />
+      <h2>
+        A SPTrans se preocupa com a acessibilidade de todos os passageiros.
+      </h2>
+      <p id="paragrafo">
+        Garantimos a disponibilidade de veículos adaptados, com elevadores
+        para cadeiras de rodas, espaços reservados, etc. Estamos comprometidos
+        em proporcionar uma experiência de viagem inclusiva e acessível para
+        todos.
+      </p>
+    </div>
+    <div class="container3">
+      <h2 style="padding-left: 41%; margin-bottom: 5%">Nossos serviços</h2>
+      <img src="img/cega.png" alt="Uma moça cega descendo do ônibus com facilidade" class="servicos-esq" />
+      <h3 id="titulo-esq">
+        Acessibilidade para<span style="color: var(--txtSecundario)">
+          Deficientes Visuais</span>
+      </h3>
+      <p id="par-esq">
+        Garantimos a presença de informações em braile nos ônibus, além de
+        treinamento especializado para nossos motoristas. Estamos
+        comprometidos em proporcionar uma viagem inclusiva e acessível para
+        todos os passageiros, incluindo os cegos. Além disso, a infraestrutura
+        das estações deve ser projetada para facilitar a mobilidade e a
+        segurança das pessoas com deficiência visual. Pisos táteis direcionais
+        e de alerta podem ajudar a guiar os deficientes visuais nas
+        plataformas e nas áreas de embarque e desembarque. Corrimãos táteis e
+        elevadores acessíveis são essenciais para permitir que todos tenham
+        acesso às diferentes áreas do transporte público.
+      </p>
+      <img src="img/cadeirante.png"
+        alt="Um moço cadeirante feliz subindo no ônibus com a rampa e elevador de acessibilidade que possuímos, tudo isso com uma boa iluminação dos raios solares!"
+        class="servicos-dir" />
+      <h3 id="titulo-dir">
+        Acessibilidade para<span style="color: var(--txtSecundario)">
+          Deficientes Físicos</span>
+      </h3>
+      <p id="par-esq">
+        Os veículos possuem espaços reservados e adequados para cadeiras de
+        rodas, com rampas ou elevadores de acesso. Isso permite que os
+        cadeirantes embarquem e desembarquem com segurança e facilidade. Além
+        disso, as estações e pontos de ônibus são equipados com rampas de
+        acesso, calçadas rebaixadas e elevadores, para que os cadeirantes
+        possam se locomover de forma autônoma. Os funcionários do transporte
+        público devem ser treinados para prestar assistência adequada aos
+        passageiros com deficiência física, garantindo que eles sejam tratados
+        com respeito e sensibilidade.
+      </p>
+      <img src="img/banco.png"
+        alt="Cadeiras com coloração diferente reservadas para grupos de preferência (grávidas, crianças de colo, idosos, autistas, deficientes físicos, etc) dentro dos nossos ônibus"
+        class="servicos-esq" />
+      <h3 id="titulo-esq">
+        Acessibilidade com os<span style="color: var(--txtSecundario)">
+          Assentos Preferenciais</span>
+      </h3>
+      <p id="par-esq">
+        Os assentos preferenciais nos transportes públicos é uma medida
+        fundamental para garantir o conforto e a inclusão de pessoas com
+        necessidades especiais, como idosos, gestantes, pessoas com
+        deficiência ou mobilidade reduzida. Esses assentos, na SPTrans, são
+        designados para permitir que esses grupos tenham prioridade e acesso
+        adequado durante suas viagens. Os assentos preferenciais são
+        claramente identificados e localizados de forma estratégica nos
+        veículos e estações.
+      </p>
+    </div>
+  </div>
+
+  <div class="rodape">
+    <a class="link" href="contato.html"> CONTATO </a> |
+    <a class="link" href="about.html"> SOBRE NÓS </a> |
+    <a class="link" href="onibus.html"> ÔNIBUS </a>|
+    <a class="link" href="acess.html"> ACESSIBILIDADE </a>
+  </div>
+  <script src="./js/acessibilidade.js"></script>
+</body>
+
+</html>

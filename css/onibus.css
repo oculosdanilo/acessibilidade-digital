@@ -1,0 +1,348 @@
+:root {
+  --fonteHeading: 110%;
+  /* normal: 110%; grande: 130%; enorme: 150%  */
+  --fonteParagrafo: 100%;
+  /* normal: 100%; grande: 120%; enorme: 140% */
+  --fundo: white;
+  /* alto contraste: black */
+  --txtColor: black;
+  /* alto contraste: white */
+  --txtColorHover: red;
+  /* alto contraste: white */
+  --sombra: rgb(201, 201, 201);
+  /* alto contraste: transparent */
+  --kmColor: rgb(130, 0, 0);
+  /* alto contraste: black */
+  --bordaContraste: transparent;
+  /* alto contraste: white */
+  --inputHover: rgb(224, 224, 224);
+  /* alto contraste: transparent */
+  --inputBorda: rgb(245, 83, 83);
+  /* alto contraste: white */
+  --txtSecundario: red;
+  /* alto contraste: yellow */
+  --fonteName: 18px;
+  /* normal: 18px; grande: 22px; enorme: 26px */
+  --fonteDescricao: 14px;
+  /* normal: 14px; grande: 18px; enorme: 22px */
+  --fonteBtn: 16px;
+  /* normal: 16px; grande: 20px; enorme: 24px */
+  --btnColor: red;
+  /* alto contraste: black */
+  --nameColor: #333;
+  /* alto contraste: white */
+  --descColor: #707070;
+  /* alto contraste: white */
+  --titulo: 200%;
+  /* normal: 200%; grande: 250%; enorme: 300% */
+  --subtitulo: 120%;
+  /* normal: 120%; grande: 150%; enorme: 200% */
+  --tabelaFundoVermelho: rgb(252, 36, 36);
+  /* alto contraste: black */
+  --tabelaFundoVermelhoEscuro: rgb(150, 24, 24);
+  /* alto contraste: black */
+  --tabelaFundoAmarelo: yellow;
+  /* alto contraste: black */
+  --tabelaFundoCinza: lightgray;
+  /* alto contraste: black */
+  --tabelaBorda: rgb(252, 143, 143);
+  /* alto contraste: yellow */
+}
+
+html {
+  overflow-x: hidden;
+}
+
+p,
+h1,
+h2,
+h3 {
+  color: var(--txtColor);
+}
+
+.body {
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: var(--fundo);
+}
+
+.header {
+  background-color: var(--fundo);
+  height: 11vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0px 2px 20px var(--sombra);
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+  border-bottom: 3px solid var(--bordaContraste);
+}
+
+.link {
+  margin: 1%;
+  transition-duration: 0.8s;
+  text-decoration: none;
+  color: var(--txtColor);
+  font-size: var(--fonteHeading);
+}
+
+.link:hover {
+  color: var(--txtColorHover);
+  text-decoration: underline;
+
+  scale: 1.3;
+}
+
+.logo {
+  width: 30%;
+  height: 70%;
+  margin-left: 23%;
+  transform: scale(0.8);
+}
+
+.txtBusca {
+  width: 25%;
+  border: none;
+  height: 25%;
+  border-bottom: 3px solid var(--inputBorda);
+  background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+  background-size: 20px;
+  margin-left: -5%;
+  font-size: var(--fonteHeading);
+  color: var(--txtColor);
+}
+
+.header input:focus {
+  outline: none !important;
+  border: none;
+  box-shadow: 0px 2px 20px var(--sombra);
+  border-bottom: 3px solid var(--inputBorda);
+}
+
+h1.titulo {
+  display: flex;
+  justify-content: center;
+  font-size: var(--titulo);
+  color: var(--txtColor);
+}
+
+.subtitulo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: var(--fonteParagrafo);
+  color: var(--txtColor);
+}
+
+.tabela {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Prompt", sans-serif;
+  margin-bottom: 2em;
+}
+
+.table {
+  width: 40%;
+  height: 25%;
+  justify-content: center;
+  align-items: center;
+}
+
+table.table td,
+th {
+  border: 0.5px solid var(--tabelaBorda);
+  color: var(--txtColor);
+}
+
+tr:nth-child(even) {
+  background: var(--tabelaFundoCinza);
+}
+
+.destino {
+  padding-left: 3%;
+  display: flex;
+  height: 92%;
+  align-items: center;
+}
+
+.rodape {
+  box-shadow: 0px 2px 20px var(--sombra);
+  width: 100vw;
+  height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Prompt", sans-serif;
+  font-weight: bold;
+}
+
+.onibus {
+  width: 7%;
+  height: 70%;
+}
+
+.logo-rodape {
+  width: 24%;
+  height: 100%;
+  margin-left: 45%;
+  margin-right: -30%;
+}
+
+.info {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  font-family: "Prompt", sans-serif;
+}
+
+/** acess.html*/
+.informacoes {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+  height: 100%;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--fundo);
+}
+
+.container1 {
+  background-color: var(--fundo);
+  width: 41%;
+  float: left;
+  padding-left: 35px;
+  padding-right: 60px;
+}
+
+.container2 {
+  background-color: var(--fundo);
+  height: 80vh;
+  padding-left: 40px;
+  padding-right: 50px;
+  width: 41%;
+  float: right;
+}
+
+.ilustracao {
+  width: 45%;
+  height: 40%;
+  box-shadow: 0px 2px 20px var(--sombra);
+}
+
+.ilustracao2 {
+  width: 60%;
+  height: 40%;
+  margin-left: 42%;
+  box-shadow: 0px 2px 20px var(--sombra);
+  margin-bottom: 5%;
+}
+
+.container3 {
+  background-color: var(--fundo);
+  width: 100%;
+  float: right;
+}
+
+.servicos-esq {
+  width: 45%;
+  height: 60vh;
+  float: left;
+  margin-right: 2%;
+  box-shadow: 0px 2px 20px var(--sombra);
+}
+
+#titulo-esq {
+  margin-right: -10px;
+  margin-top: 10%;
+  font-style: bolder;
+}
+
+#par-esq {
+  margin-top: 3%;
+  margin-right: 3%;
+  margin-bottom: 10%;
+}
+
+.servicos-dir {
+  width: 45%;
+  height: 60vh;
+  float: right;
+  margin-left: 2%;
+  margin-bottom: 13%;
+  box-shadow: 0px 2px 20px var(--sombra);
+}
+
+#titulo-dir {
+  margin-top: 17%;
+  font-style: bolder;
+  direction: rtl;
+}
+
+#par-dir {
+  direction: rtl;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-bottom: 13%;
+}
+
+th,
+td {
+  font-size: var(--fonteParagrafo);
+}
+
+p {
+  font-size: var(--subtitulo);
+}
+
+h1,
+h2,
+h3 {
+  font-size: var(--titulo);
+}
+
+/* menu de acessibilidade */
+.acessibilidade {
+  background-color: rgb(99, 98, 98);
+  width: 100%;
+  height: 5%;
+  z-index: 99;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.btnsFonte {
+  display: flex;
+  align-items: center;
+  margin-left: 5em;
+}
+
+.btnsFonte button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 5vh;
+  width: 3.5vh;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contrasteSwitcher {
+  margin-left: auto;
+  margin-right: 5em;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}

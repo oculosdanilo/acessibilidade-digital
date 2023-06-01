@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Grupo: Danilo Lima, Guilherme Barbosa, Juliana Leal, Felipe Araújo e Camila Vitória">
+  <meta meta="keywords" content="acessibilidade digital">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title> Teste </title>
+</head>
+
+<body class="body">
+  <div class="acessibilidade">
+    <div class="btnsFonte">
+      <button id="btnFonte1" style="font-size: small; background-color: white; color: black;" value="normal"
+        aria-label="Tamanho da fonte: normal" onclick="selecionarFonte(this.value, this)">A</button> |
+      <button id="btnFonte2" style="font-size: large;" value="grande" aria-label="Tamanho da fonte: grande"
+        onclick="selecionarFonte(this.value, this)">A</button> |
+      <button id="btnFonte3" style="font-size: x-large;" value="enorme" aria-label="Tamanho da fonte: enorme"
+        onclick="selecionarFonte(this.value, this)">A</button>
+    </div>
+    <button class="contrasteSwitcher" onclick="switchContraste()" aria-label="Contraste">
+      <span class="material-icons">
+        contrast
+      </span>
+    </button>
+  </div>
+  <div class="header">
+    <a class="link" href="contato.html"> CONTATO </a> |
+    <a class="link" href="about.html"> SOBRE NÓS </a> |
+    <a class="link" href="onibus.html"> ÔNIBUS </a>|
+    <a class="link" href="acess.html"> ACESSIBILIDADE </a>
+    <a href="index.html">
+      <img id="imgLogo" src="img/sptrans.png" class="logo" alt="Logotipo oficial da SPTrans"><br>
+    </a>
+    <input id="buscar" type="text" class="txtBusca" placeholder="Buscar..." />
+  </div>
+
+  <div class="content">
+    <div class="guard">
+      <div class="olho-vivo">
+        <a href="https://olhovivo.sptrans.com.br/">
+          <img src="img/olho.png" alt="Logotipo oficial da Olho Vivo">
+        </a>
+      </div>
+
+      <div class="sep"></div>
+
+      <div class="info">
+        <div class="part">
+          <p> BAIRRO > CENTRO </p>
+          <div class="km">
+            27KMh
+          </div>
+        </div>
+
+        <div class="part">
+          <p> CENTRO > BAIRRO </p>
+          <div class="km">
+            25KMh
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a class="link" href="contato.html"> CONTATO </a> |
+    <a class="link" href="about.html"> SOBRE NÓS </a> |
+    <a class="link" href="onibus.html"> ÔNIBUS </a>|
+    <a class="link" href="acess.html"> ACESSIBILIDADE </a>
+  </div>
+  <script src="js/acessibilidade.js"></script>
+</body>
+
+</html>
