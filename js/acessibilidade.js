@@ -5,8 +5,18 @@ const btnFonte3 = document.getElementById("btnFonte3");
 const imgLogo = document.getElementById("imgLogo");
 const buscar = document.getElementById("buscar");
 
+btnFonte1.onclick = () => {
+  selecionarFonte("normal", btnFonte1);
+};
+btnFonte2.onclick = () => {
+  selecionarFonte("grande", btnFonte2);
+};
+btnFonte3.onclick = () => {
+  selecionarFonte("enorme", btnFonte3);
+};
+
 var fonteSession = sessionStorage.getItem("fonte");
-if (fonteSession != "") {
+if (fonteSession != "" && fonteSession != null) {
   switch (fonteSession) {
     case "enorme":
       selecionarFonte("enorme", btnFonte3);
@@ -21,7 +31,7 @@ if (fonteSession != "") {
 }
 
 var contrasteSession = sessionStorage.getItem("contraste");
-if (contrasteSession != "") {
+if (contrasteSession != "" && contrasteSession != null) {
   if (contrasteSession == "true") {
     document.documentElement.style.setProperty("--fundo", "black");
     document.documentElement.style.setProperty("--txtColor", "white");
@@ -96,15 +106,11 @@ if (contrasteSession != "") {
 }
 
 function selecionarFonte(valor, botao) {
-  btnFonte1.style.backgroundColor = "transparent";
-  btnFonte1.style.color = "white";
-  btnFonte2.style.backgroundColor = "transparent";
-  btnFonte2.style.color = "white";
-  btnFonte3.style.backgroundColor = "transparent";
-  btnFonte3.style.color = "white";
+  btnFonte1.classList.remove("selecionado");
+  btnFonte2.classList.remove("selecionado");
+  btnFonte3.classList.remove("selecionado");
 
-  botao.style.backgroundColor = "white";
-  botao.style.color = "black";
+  botao.classList.add("selecionado");
 
   switch (valor) {
     case "normal":
