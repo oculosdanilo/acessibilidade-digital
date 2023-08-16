@@ -67,7 +67,8 @@ html {
   border: none;
   height: 25%;
   border-bottom: 3px solid var(--inputBorda);
-  background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+  background: url("https://static.thenounproject.com/png/101791-200.png")
+    no-repeat right;
   background-size: 20px;
   padding-left: 2em;
 }
@@ -246,4 +247,26 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.fonteN {
+  font-size: medium;
+}
+
+.fonteG {
+  font-size: large;
+}
+
+.fonteE {
+  font-size: x-large;
+}
+
+.selecionado {
+  background-color: white;
+  color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
 }

@@ -22,11 +22,11 @@
 <body>
   <div class="acessibilidade">
     <div class="btnsFonte">
-      <button id="btnFonte1" style="font-size: small; background-color: white; color: black;" value="normal"
-        aria-label="Tamanho da fonte: normal" onclick="selecionarFonte(this.value, this)">A</button> |
-      <button id="btnFonte2" style="font-size: large;" value="grande" aria-label="Tamanho da fonte: grande"
+      <button id="btnFonte1" class="fonteN selecionado" value="normal" aria-label="Tamanho da fonte: normal"
         onclick="selecionarFonte(this.value, this)">A</button> |
-      <button id="btnFonte3" style="font-size: x-large;" value="enorme" aria-label="Tamanho da fonte: enorme"
+      <button id="btnFonte2" class="fonteG" value="grande" aria-label="Tamanho da fonte: grande"
+        onclick="selecionarFonte(this.value, this)">A</button> |
+      <button id="btnFonte3" class="fonteE" value="enorme" aria-label="Tamanho da fonte: enorme"
         onclick="selecionarFonte(this.value, this)">A</button>
     </div>
     <button class="contrasteSwitcher" onclick="switchContrasteSobreNos()" aria-label="Contraste">
@@ -36,16 +36,18 @@
       Alto contraste
     </button>
   </div>
-  <div class="header">
-    <a class="link" href="contato.html"> CONTATO </a> |
-    <a class="link" href="about.html"> SOBRE NÓS </a> |
-    <a class="link" href="onibus.html"> ÔNIBUS </a>|
-    <a class="link" href="acess.html"> ACESSIBILIDADE </a>
-    <a href="index.html">
-      <img id="imgLogo" src="img/sptrans.png" class="logo" alt="Logotipo oficial da SPTrans"><br>
-    </a>
+  <header class="header">
+    <nav>
+      <a class="link" href="contato.html"> CONTATO </a> |
+      <a class="link" href="about.html"> SOBRE NÓS </a> |
+      <a class="link" href="onibus.html"> ÔNIBUS </a>|
+      <a class="link" href="acess.html"> ACESSIBILIDADE </a>
+      <a href="index.html">
+        <img id="imgLogo" src="img/sptrans.png" class="logo" alt="Logotipo oficial da SPTrans"><br>
+      </a>
+    </nav>
     <input id="buscar" type="text" class="txtBusca" placeholder="Buscar..." />
-  </div>
+  </header>
 
   <div class="content">
     <div class="slide-container swiper">
@@ -61,7 +63,7 @@
             </div>
 
             <div class="card-content">
-              <h2 class="name"> Camila Vitória </h2>
+              <p class="name"> Camila Vitória </p>
               <p class="description"> Pesquisas e Reparos. </p>
 
               <a href="https://github.com/Camila-tech2"> <button class="button"> Ver Mais </button> </a>
@@ -79,7 +81,7 @@
             </div>
 
             <div class="card-content">
-              <h2 class="name"> Felipe Araujo </h2>
+              <p class="name"> Felipe Araujo </p>
               <p class="description"> Programador e Designer. </p>
 
               <button class="button"> Ver Mais </button>
@@ -96,7 +98,7 @@
             </div>
 
             <div class="card-content">
-              <h2 class="name"> Guilherme Barbosa </h2>
+              <p class="name"> Guilherme Barbosa </p>
               <p class="description"> Programador e Designer. </p>
 
               <a href="https://github.com/devGuiIherme"> <button class="button"> Ver Mais </button> </a>
@@ -112,7 +114,7 @@
             </div>
 
             <div class="card-content">
-              <h2 class="name"> Danilo Lima </h2>
+              <p class="name"> Danilo Lima </p>
               <p class="description"> Programador. </p>
 
               <a href="https://github.com/oculosdanilo"> <button class="button"> Ver Mais </button> </a>
@@ -129,7 +131,7 @@
             </div>
 
             <div class="card-content">
-              <h2 class="name"> Juliana Lima </h2>
+              <p class="name"> Juliana Lima </p>
               <p class="description"> Pesquisas. </p>
 
               <button class="button"> Ver Mais </button>

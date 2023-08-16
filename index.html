@@ -16,12 +16,9 @@
 <body class="body">
   <div class="acessibilidade">
     <div class="btnsFonte">
-      <button id="btnFonte1" style="font-size: small; background-color: white; color: black;" value="normal"
-        aria-label="Tamanho da fonte: normal" onclick="selecionarFonte(this.value, this)">A</button> |
-      <button id="btnFonte2" style="font-size: large;" value="grande" aria-label="Tamanho da fonte: grande"
-        onclick="selecionarFonte(this.value, this)">A</button> |
-      <button id="btnFonte3" style="font-size: x-large;" value="enorme" aria-label="Tamanho da fonte: enorme"
-        onclick="selecionarFonte(this.value, this)">A</button>
+      <button id="btnFonte1" class="fonteN" aria-label="Tamanho da fonte: normal">A</button> |
+      <button id="btnFonte2" class="fonteG" aria-label="Tamanho da fonte: grande">A</button> |
+      <button id="btnFonte3" class="fonteE" aria-label="Tamanho da fonte: enorme">A</button>
     </div>
     <button class="contrasteSwitcher" onclick="switchContraste()" aria-label="Contraste">
       <span class="material-icons" style="margin-right: 5px;">
@@ -30,16 +27,27 @@
       Alto contraste
     </button>
   </div>
-  <div class="header">
-    <a class="link" href="contato.html"> CONTATO </a> |
-    <a class="link" href="about.html"> SOBRE NÓS </a> |
-    <a class="link" href="onibus.html"> ÔNIBUS </a>|
-    <a class="link" href="acess.html"> ACESSIBILIDADE </a>
-    <a href="index.html">
-      <img id="imgLogo" src="img/sptrans.png" class="logo" alt="Logotipo oficial da SPTrans"><br>
-    </a>
+  <header class="header">
+    <nav>
+      <a class="link" href="contato.html">
+        <h3>CONTATO</h3>
+      </a> |
+      <a class="link" href="about.html">
+        <h3>SOBRE NÓS</h3>
+      </a> |
+      <a class="link" href="onibus.html">
+        <h3>ÔNIBUS</h3>
+      </a>|
+      <a class="link" href="acess.html">
+        <h3>ACESSIBILIDADE</h3>
+      </a>
+      <a href="index.html">
+        <img id="imgLogo" src="img/sptrans.png" class="logo" alt="Logotipo oficial da SPTrans"><br>
+      </a>
+    </nav>
+
     <input id="buscar" type="text" class="txtBusca" placeholder="Buscar..." />
-  </div>
+  </header>
 
   <div class="content">
     <div class="guard">
@@ -69,12 +77,12 @@
     </div>
   </div>
 
-  <div class="footer">
+  <footer class="footer">
     <a class="link" href="contato.html"> CONTATO </a> |
     <a class="link" href="about.html"> SOBRE NÓS </a> |
     <a class="link" href="onibus.html"> ÔNIBUS </a>|
     <a class="link" href="acess.html"> ACESSIBILIDADE </a>
-  </div>
+  </footer>
   <script src="js/acessibilidade.js"></script>
 </body>
 
