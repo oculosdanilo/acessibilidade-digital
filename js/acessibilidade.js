@@ -4,6 +4,7 @@ const btnFonte2 = document.getElementById("btnFonte2");
 const btnFonte3 = document.getElementById("btnFonte3");
 const imgLogo = document.getElementById("imgLogo");
 const buscar = document.getElementById("buscar");
+const contrasteHTML = document.getElementById("contraste");
 
 btnFonte1.onclick = () => {
   selecionarFonte("normal", btnFonte1);
@@ -13,6 +14,9 @@ btnFonte2.onclick = () => {
 };
 btnFonte3.onclick = () => {
   selecionarFonte("enorme", btnFonte3);
+};
+contrasteHTML.onclick = () => {
+  switchContraste();
 };
 
 var fonteSession = sessionStorage.getItem("fonte");
