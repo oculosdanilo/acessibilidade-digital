@@ -30,28 +30,30 @@
       Alto contraste
     </button>
   </div>
-  <div class="header">
-    <a class="link" href="contato.html"> CONTATO </a> |
-    <a class="link" href="about.html"> SOBRE NÓS </a> |
-    <a class="link" href="onibus.html"> ÔNIBUS </a>|
-    <a class="link" href="acess.html"> ACESSIBILIDADE </a>
-    <a href="index.html">
-      <img id="imgLogo" src="img/sptrans.png" class="logo" alt="Logotipo oficial da SPTrans"><br>
-    </a>
+  <header class="header">
+    <nav>
+      <a accesskey="c" class="link" href="contato.html"> CONTATO </a> |
+      <a accesskey="s" class="link" href="about.html"> SOBRE NÓS </a> |
+      <a class="link" accesskey="o" href="onibus.html"> ÔNIBUS </a>|
+      <a class="link" accesskey="a" href="acess.html"> ACESSIBILIDADE </a>
+      <a href="index.html" accesskey="i">
+        <img id="imgLogo" src="img/sptrans.png" class="logo" alt="Logotipo oficial da SPTrans"><br>
+      </a>
+    </nav>
     <input id="buscar" type="text" class="txtBusca" placeholder="Buscar..." />
-  </div>
+  </header>
   <noscript>Para acessar esse site, você precisa ativar o JavaScript!</noscript>
 
   <div class="content">
     <div class="guarda-contato">
       <form class="form" method="post">
-        <h1 class="in"> Nome </h1>
+        <p class="in"> Nome </p>
         <input class="space" type="text" name="name" id="name" placeholder="Nome...">
-        <h1 class="in"> E-mail </h1>
+        <p class="in"> E-mail </p>
         <input class="space" type="email" name="email" id="email" placeholder="E-mail...">
-        <h1 class="in"> Telefone </h1>
+        <p class="in"> Telefone </p>
         <input class="space" type="tel" name="tel" id="tel" placeholder="(11) 00000-0000">
-        <h1 class="in"> Motivo </h1>
+        <p class="in"> Motivo </p>
         <input class="space" type="text" name="mot" id="mot" placeholder="Motivo do contato...">
 
         <button class="botao" type="submit"> ENVIAR </button>
