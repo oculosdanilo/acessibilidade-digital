@@ -352,3 +352,25 @@ h3 {
   padding: 10px;
   cursor: pointer;
 }
+
+.fonteN {
+  font-size: medium;
+}
+
+.fonteG {
+  font-size: large;
+}
+
+.fonteE {
+  font-size: x-large;
+}
+
+.selecionado {
+  background-color: white;
+  color: black;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
