@@ -67,6 +67,11 @@ h3 {
   background-color: var(--fundo);
 }
 
+a:focus,
+a:hover {
+  border: 2px solid #f00;
+}
+
 .header {
   background-color: var(--fundo);
   height: 11vh;
@@ -107,7 +112,8 @@ h3 {
   border: none;
   height: 25%;
   border-bottom: 3px solid var(--inputBorda);
-  background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+  background: url("https://static.thenounproject.com/png/101791-200.png")
+    no-repeat right;
   background-size: 20px;
   margin-left: -5%;
   font-size: var(--fonteHeading);
