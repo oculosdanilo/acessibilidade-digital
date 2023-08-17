@@ -57,10 +57,15 @@ header {
   box-shadow: 0px 2px 20px var(--sombra);
 }
 
+a:focus,
+a:hover {
+  border: 2px solid #f00;
+}
+
 .link {
   font-size: var(--fonteHeading);
   margin: 2%;
-  transition-duration: 0.8s;
+  transition: scale 0.8s;
   text-decoration: none;
   color: var(--txtColor);
 }

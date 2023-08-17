@@ -24,7 +24,7 @@
         onclick="selecionarFonte(this.value, this)">A</button>
     </div>
     <button class="contrasteSwitcher" onclick="switchContraste()" aria-label="Contraste">
-      <span class="material-icons" style="margin-right: 5px;">
+      <span class="material-icons">
         contrast
       </span>
       Alto contraste
@@ -47,14 +47,15 @@
   <div class="content">
     <div class="guarda-contato">
       <form class="form" method="post">
-        <p class="in"> Nome </p>
-        <input class="space" type="text" name="name" id="name" placeholder="Nome...">
-        <p class="in"> E-mail </p>
-        <input class="space" type="email" name="email" id="email" placeholder="E-mail...">
-        <p class="in"> Telefone </p>
-        <input class="space" type="tel" name="tel" id="tel" placeholder="(11) 00000-0000">
-        <p class="in"> Motivo </p>
-        <input class="space" type="text" name="mot" id="mot" placeholder="Motivo do contato...">
+        <label for="name" class="in"> Nome </label>
+        <input aria-label="nome" class="space" type="text" name="name" id="name" placeholder="Nome...">
+        <label for="email" class="in"> E-mail </label>
+        <input class="space" aria-label="email" type="email" name="email" id="email" placeholder="E-mail...">
+        <label for="tel" class="in"> Telefone </label>
+        <input class="space" type="tel" aria-label="Telefone" name="tel" id="tel" placeholder="(11) 00000-0000">
+        <label for="mot" class="in"> Motivo </label>
+        <input class="space" type="text" name="mot" aria-label="Motivo do contato" id="mot"
+          placeholder="Motivo do contato...">
 
         <button class="botao" type="submit"> ENVIAR </button>
       </form>
