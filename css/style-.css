@@ -33,6 +33,11 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
+a:focus,
+a:hover {
+  border: 2px solid #f00;
+}
+
 .header {
   background-color: var(--fundo);
   height: 11vh;
